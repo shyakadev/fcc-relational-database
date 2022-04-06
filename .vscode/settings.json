@@ -86,7 +86,7 @@
     }
   },
   "workbench.iconTheme": null,
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
   "zenMode.centerLayout": false
