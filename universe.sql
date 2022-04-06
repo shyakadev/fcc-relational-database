@@ -125,9 +125,6 @@ ALTER SEQUENCE public.images_image_id_seq OWNED BY public.images.images_id;
 CREATE TABLE public.moon (
     moon_id integer NOT NULL,
     name character varying(30) NOT NULL,
-    description text,
-    has_life boolean NOT NULL,
-    is_spherical boolean NOT NULL,
     age_in_millions_of_years integer,
     distance_from_earth numeric(10,2),
     planet_id integer
@@ -296,6 +293,26 @@ INSERT INTO public.images VALUES (3, 'backward_galaxy.jpg', 'backward_galaxy', N
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.moon VALUES (2, 'Moon', 2030023, 3232343.20, 4);
+INSERT INTO public.moon VALUES (3, 'Phobos', 2030023, 3232343.20, 2);
+INSERT INTO public.moon VALUES (4, 'Deimos', 2030023, 3232343.20, 2);
+INSERT INTO public.moon VALUES (5, 'Lo', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (6, 'Europa', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (7, 'Ganymede', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (8, 'Callissto', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (9, 'Amalthea', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (10, 'Himalia', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (11, 'Elara', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (12, 'Pasiphae', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (13, 'Sinope', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (14, 'Lysithea', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (15, 'Carme', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (16, 'Ananke', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (17, 'Leda', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (18, 'Thebe', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (19, 'Adrastea', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (20, 'Metis', 2030023, 3232343.20, 8);
+INSERT INTO public.moon VALUES (21, 'Callirrhoe', 2030023, 3232343.20, 8);
 
 
 --
@@ -346,7 +363,7 @@ SELECT pg_catalog.setval('public.images_image_id_seq', 3, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 21, true);
 
 
 --
